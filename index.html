@@ -22,7 +22,7 @@
     <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body onload="init()">
 
     <nav class="dt w-100 border-box pa3 ph5-ns">
         <a class="dtc v-mid mid-gray link dim w-25" href="#" title="Home">
@@ -35,8 +35,7 @@
         </div>
     </nav>
 
-
-    <body onload="init()">
+    <main>
         <canvas onclick="drawShape(event)" onmousemove="showCoords(event)" onmouseout="clearCoor(event)" id="can" width="400" height="400" style="position:absolute;top:10%;left:10%;border:2px solid;">
   </canvas>
         <canvas id="canvasimg" style="display:none;"></canvas>
@@ -45,7 +44,7 @@
         <input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:75%;left:15%;">
         <div id="mouse_position" style="position:absolute;top:75%;left:25%;"></div>
         <script src="js/main.js"></script>
-
-    </body>
+    </main>
+</body>
 
 </html>
