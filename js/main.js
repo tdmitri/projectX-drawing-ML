@@ -9,7 +9,7 @@ var globalCompositeOperation = "source-over";
 var lineWidth = 2;
 
 function init() {
-    var imageSrc = '/abstract-geometric-pattern_23-2147508597.jpg'
+    var imageSrc = ''
     backgroundImage = new Image();
     backgroundImage.src = imageSrc;
     canvas = document.getElementById('can');
@@ -26,21 +26,6 @@ function getColor(btn) {
     globalCompositeOperation = 'source-over';
     lineWidth = 2;
     switch (btn.getAttribute('data-color')) {
-        case "green":
-            fillStyle = "green";
-            break;
-        case "blue":
-            fillStyle = "blue";
-            break;
-        case "red":
-            fillStyle = "red";
-            break;
-        case "yellow":
-            fillStyle = "yellow";
-            break;
-        case "orange":
-            fillStyle = "orange";
-            break;
         case "black":
             fillStyle = "black";
             break;
