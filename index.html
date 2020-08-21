@@ -74,7 +74,12 @@
 
     <article class="athelas pa4">
         <p class="f6 f4-ns lh-copy measure center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quis pariatur officiis totam odio doloremque sint harum ea excepturi magni.
+          <h1>Upload file</h1>
+          <form action="/upload" method="post" enctype="multipart/form-data">
+              <label>Файл</label><br>
+              <input type="file" name="filedata" /><br><br>
+              <input type="submit" value="Send" />
+            </form>
         </p>
       </article>
 
