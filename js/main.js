@@ -76,6 +76,7 @@ function erase() {
 
 function save() {
 
+
     const data = this.canvas.toDataURL('image/png');
     const a = document.createElement('a');
     a.href = data;
