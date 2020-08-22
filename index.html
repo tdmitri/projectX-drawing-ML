@@ -63,15 +63,15 @@
       <script src="js/main.js"></script>
       <script type='text/javascript'>
         function screenshot(){
-           html2canvas(document.body,{}).then(function(canvas) {
+           html2canvas(document.body,{background: '#fff'}).then(function(canvas) {
    
             // Get base64URL
-            var base64URL = canvas.toDataURL('image/jpeg').replace('image/jpeg', 'image/octet-stream');
+            var base64URL = can.toDataURL('image/png').replace('image/png', 'image/octet-stream');
    
             // AJAX request
             $.ajax({
                url: 'ajaxfile.php',
-               type: 'post',
+               type: 'POST',
                data: {image: base64URL},
                success: function(data){
                   console.log('Upload successfully');
