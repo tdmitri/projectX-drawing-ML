@@ -73,17 +73,6 @@ function erase() {
     }
 }
 
-
-function save() {
-
-
-    const data = this.canvas.toDataURL('image/png');
-    const a = document.createElement('a');
-    a.href = data;
-    a.download = 'image1.png';
-    a.click();
-}
-
 function handleMouseEvent(e) {
     if (e.type === 'mousedown') {
         prevX = currX;

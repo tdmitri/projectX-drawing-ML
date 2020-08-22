@@ -9,7 +9,7 @@ body {
 }
 
 canvas {
-    border:1px solid #d3d3d369;
+    border:3px solid #4b4b4b;
     background: #ebebeb;
     box-shadow: inset 5px 5px 10px #c5c5c5, 
                 inset -5px -5px 10px #ffffff;
