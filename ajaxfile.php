@@ -7,7 +7,7 @@ $image_parts = explode(";base64,", $image);
 
 $image_base64 = base64_decode($image_parts[1]);
 
-$filename = "screenshot_".uniqid().'.png';
+$filename = "img.png";
 
 $file = $location . $filename;
 
