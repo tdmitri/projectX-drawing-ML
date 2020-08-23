@@ -2,5 +2,5 @@ projectX-drawing-ML
 
 npm install --save html2canvas
 
-#Start PHP erver:
+#Start PHP server:
 php -S localhost:8000
