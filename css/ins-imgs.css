@@ -4,17 +4,14 @@ ul.ins-imgs {
 }
 
 li.ins-imgs-li {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    float: left;
+    padding: 5px;
 }
 
 div.ins-imgs-img img {
-    max-width: 900px;
+    max-width: 200px;
     outline: none;
-    -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+    display: table;
 }
 
 div.ins-imgs-img.zoom img {
@@ -22,8 +19,8 @@ div.ins-imgs-img.zoom img {
 }
 
 div.ins-imgs-label {
-    padding-top: 5px;
-    font: 9px sans-serif;
+    display: none;
+
 }
 
 div.ins-imgs-img a:focus {

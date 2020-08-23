@@ -67,10 +67,10 @@ function draw(dot) {
 }
 
 function erase() {
-    if (confirm("Want to clear canvas ?")) {
+
         var ctx = canvas.getContext("2d");
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-    }
+
 }
 
 function handleMouseEvent(e) {
