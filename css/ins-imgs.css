@@ -9,11 +9,12 @@ li.ins-imgs-li {
 }
 
 div.ins-imgs-img img {
-    max-width: 100px;
-    display: block;
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
 
-    /* outline: none; */
-    /* display: table; */
 }
 
 div.ins-imgs-img.zoom img {
