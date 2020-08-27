@@ -52,7 +52,7 @@ foreach ($sortedImages as $image) {
 
     # Begin adding
     writeHtml('<li class="ins-imgs-li">');
-    writeHtml('<div class="ins-imgs-img" onclick=this.classList.toggle("zoom");><a name="' . $image . '" href="#' . $image . '">');
+    writeHtml('<div class="ins1-imgs-img" onclick=this.classList.toggle("zoom");><a name="' . $image . '" href="#' . $image . '">');
     writeHtml('<img src="' . $image . '" alt="' . $name . '" title="' . $name . '">');
     writeHtml('</a></div>');
     writeHtml('<div class="ins-imgs-label">' . $name . ' ' . $lastModified . '</div>');
@@ -60,7 +60,7 @@ foreach ($sortedImages as $image) {
 }
 writeHtml('</ul>');
 
-writeHtml('<link rel="stylesheet" type="text/css" href="ins-imgs.css">');
+writeHtml('<link rel="stylesheet" type="text/css" href="/css/ins1-imgs.css">');
 
 # Convert HTML to JS
 function writeHtml($html) {

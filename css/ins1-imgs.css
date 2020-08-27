@@ -8,10 +8,10 @@ li.ins-imgs-li {
     padding: 5px;
 }
 
-div.ins-imgs-img img {
+div.ins1-imgs-img {
   display: block;
-  width: 110px;
-  height: 110px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 5px;
 
