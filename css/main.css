@@ -8,6 +8,18 @@ body {
                  -5px -5px 10px #f9f9f9;
 }
 
+.show_result {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #008CBA;
+}
+
+.origian_object {
+ width: 250px;
+ height: 250px;
+
+}
+
 canvas {
     border:3px solid #4b4b4b;
     background: #ebebeb;
