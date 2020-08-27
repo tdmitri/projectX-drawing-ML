@@ -9,9 +9,11 @@ li.ins-imgs-li {
 }
 
 div.ins-imgs-img img {
-    max-width: 200px;
-    outline: none;
-    display: table;
+    max-width: 100px;
+    display: block;
+
+    /* outline: none; */
+    /* display: table; */
 }
 
 div.ins-imgs-img.zoom img {
