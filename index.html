@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Drawing tool</title>
+    <title>SpatialSBIR</title>
     <meta name="Multi-Object Sketch-Based Image Retrieval by Visual Feature Synthesis" content="Drawing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,22 +36,22 @@
                   <button class="dtc button1 button6" type="button" value="Take screenshot" id="but_screenshot" onclick="screenshot()">
                       <i class="fas fa-file-download"> Save</i>
                   </button>
+                <label class="container">Use Unsplash
+                  <input type="checkbox"  id="unsplash_box" onclick="myFunction()">
+                  <span class="checkmark"></span>
+                </label>
                 <br>
                 Scale factor: <span class="demo" id="demo"></span>
             </div>
             <div class="slidecontainer">
                 <input type="range" min="0" max="100" value="30" class="slider" id="myRange">
             </div>
-            <canvas id="can" width="800" height="800"></canvas>
+            <canvas id="can" width="1024" height="1024"></canvas>
         </header>
 
       <div class="fn fl-ns w-50-ns button_color"> 
         <button class="dtc button1 button3" onClick="window.location.reload();">
           <i class="far fa-images"> Show results</i></button>
-          <div>
-            <p>Original object</p>
-            <script src="ins1-imgs.php"></script>
-          </div>
       </div>
       <p>Results</p>
       <script src="ins-imgs.php"></script>
@@ -75,12 +75,13 @@
    
             // Get base64URL
             var base64URL = can.toDataURL('image/png').replace('image/png', 'image/octet-stream');
-   
+            var checkBox = document.getElementById("unsplash_box");
+            var i = checkBox.checked ? 1 : 0;
             // AJAX request
             $.ajax({
                url: 'ajaxfile.php',
                type: 'POST',
-               data: {image: base64URL, scale: slider.value / 10.0},
+               data: {image: base64URL, scale: slider.value / 10.0, unsplash: i},
                success: function(data){
                   console.log('Upload successfully');
                }
